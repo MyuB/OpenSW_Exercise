@@ -1,11 +1,9 @@
 for i in range(1, 6):
     t = input(f"case {i}. time = ")
-    t = t[-5:]
     t = t.split(':')
 
     for k in range(0, 2):
         t[k] = int(t[k])
-
     #분이 30보다 적어서 바꿔야 할 경우
     if t[1] - 30 < 0:
         #00시가 들어왔을 경우
@@ -34,3 +32,26 @@ for i in range(1, 6):
 
     out = str(t[0]) + ":" + str(t[1])
     print(out)
+
+#너무 어렵게 생각했다 형변환을 너무 어렵게 진행했다.
+
+'''
+t = "10:20"
+h = int(t[:2])
+m = int(t[3:])
+
+if m > 30:
+    if (h < 10):
+        print("0" + str(h) + ":" + str(m - 30))
+    else:
+        print(str(h) + ":" + str(m - 30))
+    
+elif m < 30:
+    if h > 0:
+        if (h < 11):
+            print("0" + str(h - 1) + ":" + str(m + 30))
+        else:
+            print(str(h - 1) + ":" + str(m + 30))
+    else:
+        print("23:" + str(m + 30))
+'''

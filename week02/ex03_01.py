@@ -1,4 +1,3 @@
-print("Case 1")
 for i in range(0, 2):
     a = input("a = ")
     b = input("b = ")
@@ -32,3 +31,20 @@ for i in range(0, 2):
     else:
         print("nothing")
 
+#아니 이거도 내가 너무 어렵게 푼거 같음
+#그냥 간단하게 풀면 되는데 너무 2^4의 CASE를 생각해야 한다라고 생각한듯
+'''
+a = (5, 5)
+b = (5, -5)
+
+if a == b:
+    print("The same points")
+elif a[0] == -b[0] and a[1] == b[1]:
+    print("X-axis symmetry")
+elif a[0] == b[0] and a[1] == -b[1]:
+    print("Y-axis symmetry")
+elif a[0] == -b[0] and a[1] == -b[1]:
+    print("Origin symmetry")
+else:
+    print("Nothing")
+'''

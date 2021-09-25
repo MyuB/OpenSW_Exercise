@@ -13,3 +13,15 @@ for y in b:
     a.append(y)
 a = tuple(a)
 print(a)
+#내가 너무 어렵게 푼듯?
+
+'''
+x =  ( 1 ,  2 ,  3 )
+y = ('a','b')
+
+print("x:", x)
+print("y:", y)
+
+tmp = x + y
+print("drop 'b':", tmp[0:4])
+'''

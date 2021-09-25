@@ -25,3 +25,7 @@ for i in range(0, 2):
             print("player1")
     else:
         print("wrong input!")
+
+'''
+이렇게 간단한 경우에는 콜론 후에 바로 이어 붙이는 것도 가능하다
+'''
