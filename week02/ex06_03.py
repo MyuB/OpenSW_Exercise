@@ -1,3 +1,17 @@
-'''이거는 어떻게 해야할지 살짝 감이 안온다
-일단 readline하고 리스트로 만들고 |를 다시 ,로 바꿔서
-list로 다시 만들어야되나ㅏ......'''
+def search(name):
+    f = open('student.txt', 'r')
+    datalist = f.readlines()
+
+    for data in datalist:
+        if name in data:
+            a = data.split('|')
+            print(f"average{a[4]}, grade{a[5]}")
+            f.close()
+            return
+
+    print('없음')
+    f.close()
+
+search('Sun')
+search('Jacob')
+search('Yuna')
