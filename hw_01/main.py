@@ -159,13 +159,11 @@ class Manage(Order):
             beverage_amount = int(input("input: "))
             total_beverage_amount += beverage_amount
             self.manage_result += (beverage_amount * int(self.orderList[menuNum][1]))
-            
-        #마지막에 print 하는 부분 정리
+
         print(f"총 주문 수량: {total_beverage_amount} 개, 총 주문 금액: {self.manage_result}원")
 
     def toSale(self):
         print(self.total)
-
 
 order = Manage()
 order.addMenu("cafe.txt")
